@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/genai.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Bing Chat AI generated image of some microsfties around a conference booth";
 
 /**
  * Project list
@@ -31,31 +31,42 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Tedx Perth - Where Have All The Girls Gone? ",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "A talk about how you shouldn't listen to that voice in your head that holds you back from opportunity",
+    url: "https://youtu.be/R6UODmQXzIs?si=xVmTd2p02DG6rl6T",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Well Connected - Small Steps You Can Take to Increase Your Impact",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "How to use LinkedIn to Establish credibility from a distance, Influence by volume, Access all areas from the factory floor to the Board Room and use these skills to position yourself for the career you want to achieve",
+    url: "https://youtu.be/ws_aGqYAqcE?si=JGTxXCb32Zo9oSg4",
   },
   {
-    title: "My Resume Site",
+    title: "GitHub CoPilot and Codespaces with Michelle ",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "A live demo showing how to use codespaces and copilot to build a game",
+    url: "https://youtu.be/cd2DLd1eFeM?si=cXC7s6ZKPW_w0Qxo",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "The Modern Trolley Problem",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "A talk about Ethics, Responsible AI, Autonomous Vehicles and Azure Custom Vision.",
+    url: "https://youtu.be/nla1LGT83FE?si=DTKpi-BqFJ5efglZ",
+  },
+  {
+    title: "Has Your Puppy Joined the Dark Side",
+    description:
+      "A live coding demo showing how to build a PWA Azure Static Website with custom vision AI built into the browser.",
+    url: "https://www.youtube.com/live/ZaV6tGFNL8g?si=ao71sh4D0Iio2nPS",
+  },
+  {
+    title: "New Breakpoint: Revolutionising the Developer Experience",
+    description:
+      "Video interview with Mish Mannering from GitHub on Copilot, Codespaces, GitHub Projects and more.",
+    url: "https://youtu.be/CZLnZOeqGvc?si=602B0MpFn7diokP9",
   },
 ];
-
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
