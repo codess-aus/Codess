@@ -44,10 +44,10 @@ const projectList = [
     url: "https://youtu.be/ws_aGqYAqcE?si=JGTxXCb32Zo9oSg4",
   },
   {
-    title: "GitHub CoPilot and Codespaces with Michelle ",
+    title: "Unlocking the Code of Life",
     description:
-      "A live demo showing how to use codespaces and copilot to build a game",
-    url: "https://youtu.be/cd2DLd1eFeM?si=cXC7s6ZKPW_w0Qxo",
+      "A talk about how you can use GitHub Copilot to overcome Imposter Syndrome",
+    url: "https://youtu.be/J9Qjks3d7Yg?si=cdJs4jojKth9s_vQ",
   },
   {
     title: "The Modern Trolley Problem",
