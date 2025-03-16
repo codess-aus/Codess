@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+/* Base styles and reset */
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,17 +13,23 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 div#main {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 section {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 section.min-height {
@@ -45,6 +52,7 @@ section img.background {
   z-index: -1;
 }
 
+/* Typography */
 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 7rem;
@@ -105,8 +113,10 @@ a:hover {
 .container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 330px 300px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .container .box {
@@ -122,4 +132,71 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p.large {
+    font-size: 20px;
+  }
+
+  section.padding {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  p.large {
+    font-size: 18px;
+  }
+
+  p.small {
+    font-size: 14px;
+  }
+
+  section.padding {
+    padding: 2rem 0;
+  }
+
+  hr {
+    margin: 1.5rem;
+  }
 }

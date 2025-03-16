@@ -9,6 +9,7 @@
  */
 
 import React from "react";
+import "./Portfolio.css";
 
 /**
  * Desk image
@@ -67,25 +68,26 @@ const projectList = [
     url: "https://youtu.be/CZLnZOeqGvc?si=602B0MpFn7diokP9",
   },
 ];
+
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+    <section className="padding portfolio" id="portfolio">
+      <h2 className="portfolio__title">Portfolio</h2>
+      <div className="portfolio__content">
+        <div className="portfolio__image-container">
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            className="portfolio__image"
             alt={imageAltText}
           />
         </div>
-        <div className="container">
+        <div className="portfolio__projects-container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
+            <div className="portfolio__project-box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 className="portfolio__project-title">{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="portfolio__project-description small">{project.description}</p>
             </div>
           ))}
         </div>

@@ -1,0 +1,115 @@
+.portfolio {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.portfolio__title {
+  margin-bottom: 2rem;
+}
+
+.portfolio__content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.portfolio__image-container {
+  flex: 1;
+  max-width: 40%;
+  align-self: center;
+}
+
+.portfolio__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__projects-container {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.portfolio__project-box {
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 1.5rem 1rem;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__project-title {
+  margin-bottom: 0.5rem;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__project-description {
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .portfolio__content {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio__projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio__content {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  
+  .portfolio__image-container {
+    max-width: 80%;
+    margin: 0 auto 2rem;
+  }
+  
+  .portfolio__projects-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    padding: 3rem 0;
+  }
+  
+  .portfolio__image-container {
+    max-width: 100%;
+  }
+  
+  .portfolio__content {
+    padding: 0 1rem;
+  }
+  
+  .portfolio__project-box {
+    padding: 1.25rem 0.75rem;
+  }
+}

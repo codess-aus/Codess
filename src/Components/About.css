@@ -1,49 +1,91 @@
 .about {
-    padding-top: 1rem; /* Adjust this value to reduce the amount of the background image above the about section */
-    padding-bottom: 1rem;
-    background: url('../images/crowd1.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } 
-  
+  padding-top: 1rem; /* Adjust this value to reduce the amount of the background image above the about section */
+  padding-bottom: 1rem;
+  background: url('../images/crowd1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+.about__content {
+  background-color: white;
+  width: 50%;
+  padding: 4rem;
+  margin: 3rem auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.about__description {
+  font-size: 1.25rem;
+}
+
+.about__skills {
+  text-align: left;
+  columns: 2;
+  font-size: 1.25rem;
+  margin: 2rem 3rem;
+  gap: 3rem;
+}
+
+.about__detail {
+  padding: 1rem 3rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
   .about__content {
-    background-color: white;
-    width: 50%;
-    padding: 4rem;
-    margin: 3rem auto;
-    text-align: center;
+    width: 60%;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    background-attachment: scroll; /* Better performance on mobile */
   }
   
+  .about__content {
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+
   .about__description {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   
   .about__skills {
-    text-align: left;
-    columns: 2;
-    font-size: 1.25rem;
-    margin: 2rem 3rem;
-    gap: 3rem;
+    margin: 1.5rem 1.5rem;
+    font-size: 1.1rem;
+    gap: 2rem;
   }
-  
+
   .about__detail {
-    padding: 1rem 3rem 0;
+    padding: 0.75rem 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__content {
+    width: 90%;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
   }
   
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .about__content {
-      width: 90%;
-      padding: 2rem;
-    }
-  
-    .about__skills {
-      margin: 1rem 1.5rem;
-    }
-  
-    .about__detail {
-      padding: 0.5rem 1.5rem 0;
-    }
+  .about__description {
+    font-size: 1rem;
   }
+
+  .about__skills {
+    columns: 1; /* Single column on very small screens */
+    margin: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  .about__detail {
+    padding: 0.5rem 1rem 0;
+  }
+}
